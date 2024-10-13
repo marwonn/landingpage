@@ -7,7 +7,7 @@ body, html {
 
 /* Stil für das Logo */
 .logo {
-    height: 100px; /* Oder eine andere passende Größe */
+    height: 200px; /* Oder eine andere passende Größe */
     position: absolute;
     right: 20px;
     top: 20px;
