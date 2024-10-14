@@ -33,3 +33,25 @@ footer {
     padding: 10px;
     font-size: 0.8em;
 }
+
+/* Media Query für Mobilgeräte */
+@media (max-width: 768px) {
+    /* Logo kleiner machen und neu positionieren */
+    .logo {
+        width: 80px; /* Kleiner als auf dem Desktop */
+        height: auto; /* Höhe automatisch anpassen */
+        top: 10px; /* Weniger Platz am oberen Rand */
+        right: 10px; /* Weniger Platz am rechten Rand */
+    }
+
+    /* Anpassungen für das Hintergrundbild */
+    .full-background {
+        object-fit: cover;  /* Falls nicht bereits gesetzt */
+    }
+
+    /* Footer Text kleiner machen */
+    footer {
+        font-size: 12px; /* Kleinerer Text */
+        padding: 8px; /* Weniger Platz benutzen */
+    }
+}
