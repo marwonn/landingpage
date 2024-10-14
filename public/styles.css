@@ -38,7 +38,7 @@ footer {
 @media (max-width: 768px) {
     /* Logo kleiner machen und neu positionieren */
     .logo {
-        width: 180px; /* Kleiner als auf dem Desktop */
+        width: 230px; /* Kleiner als auf dem Desktop */
         height: auto; /* Höhe automatisch anpassen */
         top: 10px; /* Weniger Platz am oberen Rand */
         right: 10px; /* Weniger Platz am rechten Rand */
