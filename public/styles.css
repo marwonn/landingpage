@@ -1,25 +1,41 @@
-/* Setzt grundlegende Formatierungen */
+/* Allgemeine Einstellungen */
 body, html {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
+/* Stil für den Hintergrund-Container */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Stellt sicher, dass das Bild gut passt */
+    background-position: center; /* Zentriert das Bild */
+    z-index: -1; /* Stellt das Bild hinter die anderen Elemente */
+}
+
+/* Standard-Hintergrundbild für Desktop */
+.background-image {
+    background-image: url('desktop-hintergrund.jpg');
+}
+
+/* Media Query für Mobilgeräte: Verwendung eines anderen Hintergrundbildes auf Mobilgeräten */
+@media (max-width: 768px) {
+    .background-image {
+        background-image: url('hintergrund2.jpg');
+    }
+}
+
 /* Stil für das Logo */
 .logo {
-    height: 230px; /* Oder eine andere passende Größe */
+    width: 230px; /* Breite des Logos */
+    height: auto; /* Höhe wird automatisch basierend auf der Breite angepasst */
     position: absolute;
     right: 20px;
     top: 20px;
-}
-
-/* Vollflächiges Bild */
-.full-background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Stellt sicher, dass das Bild den Container füllt, ohne verzerrt zu werden */
-    position: fixed;
-    z-index: -1; /* Setzt das Bild hinter den Text */
 }
 
 /* Stil für den Footer */
@@ -32,26 +48,4 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.8em;
-}
-
-/* Media Query für Mobilgeräte */
-@media (max-width: 768px) {
-    /* Logo kleiner machen und neu positionieren */
-    .logo {
-        width: 230px; /* Kleiner als auf dem Desktop */
-        height: auto; /* Höhe automatisch anpassen */
-        top: 10px; /* Weniger Platz am oberen Rand */
-        right: 10px; /* Weniger Platz am rechten Rand */
-    }
-
-    /* Anpassungen für das Hintergrundbild */
-    .full-background {
-        object-fit: cover;  /* Falls nicht bereits gesetzt */
-    }
-
-    /* Footer Text kleiner machen */
-    footer {
-        font-size: 12px; /* Kleinerer Text */
-        padding: 8px; /* Weniger Platz benutzen */
-    }
 }
